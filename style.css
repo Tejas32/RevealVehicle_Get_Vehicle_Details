@@ -1,0 +1,561 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    height: 100%;
+}
+
+/* --------------- navbar --------------------- */
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 10px;
+    color: white;
+    background-color: black;
+    position: fixed;
+    top: 0; /* or any other value depending on where you want it */
+    left: 0;
+    width: 100%;
+    z-index: 1
+}
+
+.navbar h3{
+    font-size: 21px;
+}
+
+.contactus{
+    border: none;
+    color: #ffe606;
+    background-color: black;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+/* ---------------- Div 1 ------------------- */
+
+.div1{
+    border: 4px solid black;
+    border-radius: 10px;
+    padding: 20px 20px;
+    margin: 70px 30px 30px;
+    display: flex;
+    background-color: rgb(236, 236, 236);
+    
+}
+
+.div1 img{
+    width: 600px;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+/* ------------------- div search ----------------- */
+
+.search{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.reveal{
+    font-size: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: revealText 10s infinite; /* Adjust timing as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.getdiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search h2{
+    border-bottom: solid 3px #ffe606;
+    padding: 0px 0px 5px;
+}
+
+.search p{
+    text-align: center;
+    margin-top: 35px;
+}
+
+.vehicleinput{
+    margin: 20px 10vmax;
+    padding: 10px 10px;
+    outline: none;
+    border: solid 2px black;
+    border-radius: 20px;
+    font-size: 19px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    margin-top: 30px;
+}
+    
+.check{
+    margin: 20px 19vmax;
+    padding: 7px;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color: whitesmoke;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+}
+
+.check:hover{
+    transition: 0.25s;
+    background-color: #ffe606;
+    color: black;
+}
+
+/* ------------------- div2 ------------------------- */
+
+.div2{
+    border: 4px solid black;
+    border-radius: 10px;
+    padding: 20px 20px;
+    margin: 20px 30px;
+    background-color: rgb(236, 236, 236);
+    display: none;
+}
+
+.div2 h2{
+    text-align: center;
+    width: fit-content;
+    border-bottom: solid #ffe606 3px;
+}
+
+.viewdetailsdiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* sections */
+
+.sections{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    height: 20px;
+}
+
+.sections .section{
+    text-decoration: none;
+    margin: 0px 20px;
+    color: black;
+}
+
+.sections .section:hover{
+    border-bottom: #ffe606 solid;
+}
+ 
+/* ---- owner ----- */
+
+.owner{
+    margin: 20px 10vmax;
+    padding: 30px;
+    border: solid black 2px;
+    border-radius: 10px;
+}
+
+.owner1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ownername{
+    padding: 20px 30px;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0px 20px;
+}
+
+.ownername h4{
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.ownername p{
+    font-size: 18px;
+}
+
+.ownerGuardian{
+    padding: 20px 30px;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0px 20px;
+}
+
+.ownerGuardian h4{
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.ownerGuardian p{
+    font-size: 18px;
+}
+
+
+
+.ownerHand{
+    padding: 20px 30px;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0px 20px;   
+}
+
+.ownerHand h4{
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.ownerHand p{
+    font-size: 18px;
+}
+
+.ownerAddress{
+    padding: 20px 30px;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px 20px 0px;
+}
+
+.ownerAddress h4{
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.ownerAddress p{
+    font-size: 18px;
+}
+
+/* --------- vdetail ------------------ */
+
+.vdetails{
+    margin: 20px 10vmax;
+    padding: 30px;
+    border: solid black 2px;
+    border-radius: 10px;
+    display: none;
+}
+
+.makerName{
+    padding: 20px 30px;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px 20px 0px;
+}
+
+.makerName h4{
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.makerName p{
+    font-size: 18px;
+}
+
+.modelName{
+    padding: 20px 30px;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px 20px 0px;
+}
+
+.modelName h4{
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.modelName p{
+    font-size: 18px;
+}
+
+.details1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fueltype{
+    padding: 20px 30px;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px 20px 0px;
+}
+
+.fueltype h4{
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.fueltype p{
+    font-size: 18px;
+}
+
+
+.manufacturingDate{
+    padding: 20px 30px;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px 20px 0px;
+}
+
+.manufacturingDate h4{
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.manufacturingDate p{
+    font-size: 18px;
+}
+
+.engineno{
+    padding: 20px 30px;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px 20px 0px;
+}
+
+.engineno h4{
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.engineno p{
+    font-size: 18px;
+}
+
+.chassisNo{
+    padding: 20px 30px;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px 20px 0px;
+}
+
+.chassisNo h4{
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.chassisNo p{
+    font-size: 18px;
+}
+
+/* ------------ Insurance ----------------- */
+
+.Insurance{
+    margin: 20px 10vmax;
+    padding: 30px;
+    border: solid black 2px;
+    border-radius: 10px;
+    display: none;
+}
+
+.insurancepolicyno{
+    padding: 20px 30px;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px 20px 0px;
+}
+
+.insurancepolicyno h4{
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.insurancepolicyno p{
+    font-size: 18px;
+}
+
+.insurance1{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.insuranceDate{
+    padding: 20px 30px;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px 20px 0px;
+}
+
+.insuranceDate h4{
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.insuranceDate p{
+    font-size: 18px;
+}
+
+
+.insuranceprovider{
+    padding: 20px 30px;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px 20px 0px;
+}
+
+.insuranceprovider h4{
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.insuranceprovider p{
+    font-size: 18px;
+}
+
+/* -------------- Other ------------------------ */
+
+.Other{
+    margin: 20px 10vmax;
+    padding: 30px;
+    border: solid black 2px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+}
+
+.fitnessDate{
+    padding: 20px 30px;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px 10px 0px;
+}
+
+.fitnessDate h4{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.fDate p{
+    font-size: 18px;
+}
+
+.fitupto{
+    padding: 20px 30px;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px 10px 0px;
+}
+
+.fitupto h4{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.fupto p{
+    font-size: 18px;
+}
+
+.puccno{
+    padding: 20px 30px;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px 10px 0px;
+}
+
+.puccno h4{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.puno p{
+    font-size: 18px;
+}
+
+.pucexpiry{
+    padding: 20px 30px;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px 10px 0px;
+}
+
+.pucexpiry h4{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.pexpiry p{
+    font-size: 18px;
+}
+
+.isblacklisted{
+    padding: 20px 30px;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px 10px 0px;
+}
+
+.isblacklisted h4{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.isblac6 p{
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
